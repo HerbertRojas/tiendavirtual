@@ -21,7 +21,7 @@
 		require_once ($view_footer);
 	}
 	//MUESTRA INFORMACION FORMATEADA
-	function deb($data)
+	function dep($data)
 	{
 		$format = print_r('<pre>');
 		$format .= print_r($data);

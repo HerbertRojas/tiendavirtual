@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-07-2020 a las 16:08:58
+-- Tiempo de generación: 06-08-2020 a las 06:22:36
 -- Versión del servidor: 10.4.13-MariaDB
 -- Versión de PHP: 7.4.7
 
@@ -33,6 +33,35 @@ CREATE TABLE `categoria` (
   `descripcion` text NOT NULL,
   `datecreated` datetime NOT NULL,
   `status` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `cliente`
+--
+
+CREATE TABLE `cliente` (
+  `idcliente` int(10) NOT NULL,
+  `vendedorid` int(10) NOT NULL,
+  `dirreccion` varchar(100) NOT NULL,
+  `telefono` varchar(15) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `productoid` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `delivery`
+--
+
+CREATE TABLE `delivery` (
+  `iddelivery` int(10) NOT NULL,
+  `vendedorid` int(10) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `telefono` varchar(15) NOT NULL,
+  `capacidad` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -162,7 +191,7 @@ CREATE TABLE `rol` (
 
 INSERT INTO `rol` (`idrol`, `nombrerol`, `descripcion`, `status`) VALUES
 (1, 'Encargados', 'Encargados', 1),
-(2, 'Supervisor', 'Supervisor', 1);
+(2, 'Supervisor', 'Supervisor', 2);
 
 --
 -- Índices para tablas volcadas
@@ -173,6 +202,12 @@ INSERT INTO `rol` (`idrol`, `nombrerol`, `descripcion`, `status`) VALUES
 --
 ALTER TABLE `categoria`
   ADD PRIMARY KEY (`idCategoria`);
+
+--
+-- Indices de la tabla `cliente`
+--
+ALTER TABLE `cliente`
+  ADD PRIMARY KEY (`idcliente`);
 
 --
 -- Indices de la tabla `detalle_pedido`
@@ -225,6 +260,12 @@ ALTER TABLE `rol`
 --
 ALTER TABLE `categoria`
   MODIFY `idCategoria` bigint(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `cliente`
+--
+ALTER TABLE `cliente`
+  MODIFY `idcliente` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `detalle_pedido`

@@ -36,7 +36,8 @@
 										<th>ID</th>
 										<th>Nombre</th>
 										<th>Descripcion</th>
-										<th>Status</th>
+										<th>Estado</th>
+										<th>Accion</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -47,7 +48,8 @@
 										<th>ID</th>
 										<th>Nombre</th>
 										<th>Descripcion</th>
-										<th>Status</th>
+										<th>Estado</th>
+										<th>Accion</th>
 									</tr>
 								</tfoot>
 							</table>

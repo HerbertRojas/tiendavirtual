@@ -26,39 +26,7 @@
 <script src="<?php echo media(); ?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="<?php echo media(); ?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?php echo media(); ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="<?php echo media(); ?>/dist/js/demo.js"></script>
 
-<!-- <script src="<?php //echo media(); ?>/js/functions_admin.js"></script> -->
 <script src="<?php echo media(); ?>/js/functions_roles.js"></script>
-<script>
-var tableRoles;
 
-document.addEventListener('DOMContentLoaded', function(){
-	tableRoles = $('#tableRoles').dataTable( {
-		"aProcessing":true,
-		"aServerSite":true,
-		"language": {
-			"url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"
-		},
-		"ajax":{
-			"url":" "+base_url+"/Roles/getRoles",
-			"dataSrc":""
-		},
-		"columns":[
-			{"data":"idrol"},
-			{"data":"nombrerol"},
-			{"data":"descripcion"},
-			{"data":"status"}
-		],
-		"resonsieve":"thue",
-		"bDestroy":true,
-		"iDisplayLength":10,
-		"order":[[0,"desc"]]
-	});
-});
-
-
-    $("#tableRoles").DataTable();
-</script>
 </html> 
