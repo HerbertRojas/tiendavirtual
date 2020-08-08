@@ -9,29 +9,31 @@
 				</button>
 			</div>
 			<!-- form start -->
-			<form class="form-horizontal">
+			<form class="form-horizontal" id="formRol" name="formRol">
+				<input type="hidden" name="idRol" id="idRol">
 				<div class="card-body">
 					<div class="form-group">
 						<label class="control-label">Nombre</label>
-						<input class="form-control" id="txtNombre" name="txtNombre" type="text" placeholder="Nombre del Rol" required="">
+						<input class="form-control" id="txtNombre" name="txtNombre" type="text" placeholder="Nombre del Rol" >
 					</div>
 					<div class="form-group">
 						<label class="control-label">Descripcion</label>
-						<textarea class="form-control" id="txtDescripcion" name="txtDescripcion del Rol" rows="2" placeholder="Descripcion" required=""></textarea>
+						<textarea class="form-control" id="txtDescripcion" name="txtDescripcion" rows="2" placeholder="Descripcion del rol" ></textarea>
 					</div>
 					<div class="form-group">
 						<label class="control-label">Estado</label>
-						<select class="form-control">
-							<option>Activo</option>
-							<option>Inactivo</option>
+						<select class="form-control" id="listStatus" name="listStatus" >
+							<option value="1">Activo</option>
+							<option value="2">Inactivo</option>
 						</select>
+					</div>
+					<div class="title-footer">
+						<button class="btn btn-success rol-guardar" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Guardar</button>&nbsp;&nbsp;&nbsp;
+						<button type="button" class="btn btn-secondary"  data-dismiss="modal" ><i class="fa fa-fw fa-lg fa-times-circle"></i>Cerrar</button>
 					</div>
 				</div><!-- /.card-body -->
 			</form>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-				<button type="button" class="btn btn-success">Guardar</button>
-			</div>
+			
 		</div>
 	</div>
 </div>

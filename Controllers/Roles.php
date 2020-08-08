@@ -14,6 +14,12 @@
 			$data['page_title'] = " Roles Usuario<small> Tienda Virtual</small>";
 			$this->views->getView($this,"roles",$data);
 		}
+
+		public function getRole()
+		{
+			$arrData = $this->model->selectRole($_GET['idRol']);
+			echo json_encode($arrData);
+		}
 		
 		public function getRoles()
 		{
@@ -30,13 +36,41 @@
 
 				$arrData[$i]['options'] = '<div class="text-center">
 				<button class="btn btn-secondary btn-sm btnPermisosRol" rl="'.$arrData[$i]['idrol'].'" title="Permisos"><i class="fas fa-key"></i></button>
-				<button class="btn btn-primary btn-sm btnEditRol" rl="'.$arrData[$i]['idrol'].'" title="Editar"><i class="fas fa-pencil-alt"></i></button>
-				<button class="btn btn-danger btn-sm btnDelRol" rl="'.$arrData[$i]['idrol'].'" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+				<button type="button" class="btn btn-primary btn-sm btnEditRol" rl="'.$arrData[$i]['idrol'].'" title="Editar" onclick="editarRole('.$arrData[$i]['idrol'].')"><i class="fas fa-pencil-alt"></i></button>
+				<button type="button" class="btn btn-danger btn-sm btnDelRol" onclick="eliminarRol('.$arrData[$i]['idrol'].')" rl="'.$arrData[$i]['idrol'].'" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
 				</div>'; 
 			}
 			
 			echo json_encode($arrData,JSON_UNESCAPED_UNICODE);
 			die();
+		}
+
+		public function insertarRol() 
+		{
+			$strNombre = $_POST['strNombre'];
+			$strDescripcion = $_POST['strDescripcion'];
+			$listStatus = $_POST['listStatus'];
+
+			$request = $this->model->insertarRole($strNombre,$strDescripcion,$listStatus);
+
+			echo $request;
+		}
+		public function actualizarRol()
+		{
+			$strNombre = $_POST['strNombre'];
+			$strDescripcion = $_POST['strDescripcion'];
+			$listStatus = $_POST['listStatus'];
+			$idRol = $_POST['idRol'];
+
+			$request = $this->model->actualizarRole($strNombre,$strDescripcion,$listStatus,$idRol);
+
+			echo $request;
+		}
+
+		public function eliminarRol()
+		{
+			$request = $this->model->eliminarRole($_POST['idRol']);
+			echo $request;
 		}
 
 	}
