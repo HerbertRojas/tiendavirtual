@@ -9,6 +9,61 @@
 					<h1><?php echo $data['page_title'] ?></h1>
 				</div>
 			</div>
+			<hr>
+			<div class="row">
+				<div class="col-lg-3 col-6">
+					<!-- small box -->
+					<div class="small-box bg-info">
+						<div class="inner">
+							<h3>5</h3>
+							<p>Usuarios</p>
+						</div>
+						<div class="icon">
+							<i class="fas fa-users"></i>
+						</div>
+						<a href="#" class="small-box-footer">Mas Informacion <i class="fas fa-arrow-circle-right"></i></a>
+					</div>
+				</div><!-- ./col -->
+				<div class="col-lg-3 col-6">
+					<!-- small box -->
+					<div class="small-box bg-success">
+						<div class="inner">
+							<h3>25</h3>
+							<p>Clientes</p>
+						</div>
+						<div class="icon">
+							<i class="fas fa-user"></i>
+						</div>
+						<a href="#" class="small-box-footer">Mas Informacion <i class="fas fa-arrow-circle-right"></i></a>
+					</div>
+				</div><!-- ./col -->
+				<div class="col-lg-3 col-6">
+					<!-- small box -->
+					<div class="small-box bg-warning">
+						<div class="inner">
+							<h3>10</h3>
+							<p>Productos</p>
+						</div>
+						<div class="icon">
+							<i class="fas fa-briefcase"></i>
+						</div>
+						<a href="#" class="small-box-footer">Mas Informacion <i class="fas fa-arrow-circle-right"></i></a>
+					</div>
+				</div><!-- ./col -->
+				<div class="col-lg-3 col-6">
+					<!-- small box -->
+					<div class="small-box bg-danger">
+						<div class="inner">
+							<h3>500</h3>
+							<p>Productos</p>
+						</div>
+						<div class="icon">
+							<i class="fas fa-shopping-cart"></i>
+						</div>
+						<a href="#" class="small-box-footer">Mas Informacion <i class="fas fa-arrow-circle-right"></i></a>
+					</div>
+				</div><!-- ./col -->
+			</div>
 		</div><!-- /.container-fluid -->
 	</section>
 	<!-- Main content -->
