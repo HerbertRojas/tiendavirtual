@@ -30,5 +30,6 @@
 <script src="<?php echo media(); ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
 <script src="<?php echo media(); ?>/js/functions_roles.js"></script>
+<script src="<?php echo media(); ?>/js/functions_productos.js"></script>
 
 </html> 

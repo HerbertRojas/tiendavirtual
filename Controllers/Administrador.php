@@ -8,7 +8,7 @@
 
 		public function administrador()
 		{
-			$data['page_id'] = 2;
+			$data['page_id'] = 3;
 			$data['page_tag'] = "Administrador - Tienda virtual";
 			$data['page_title'] = "Administrador";
 			$data['page_name'] = "administrador";

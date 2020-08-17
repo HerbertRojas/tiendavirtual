@@ -8,7 +8,7 @@
 
 		public function Deliveri()
 		{
-			$data['page_id'] = 4;
+			$data['page_id'] = 5;
 			$data['page_tag'] = "Deliveri";
 			$data['page_neme'] = "deliveri";
 			$data['page_title'] = "Deliveri<small> Tienda Virtual</small>";

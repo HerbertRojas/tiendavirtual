@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			{"data":"status"},
 			{"data":"options"}
 		],
-		"resonsieve":"thue",
+		"resonsive":"true",
 		"bDestroy":true,
 		"iDisplayLength":5,
 		"lengthMenu": [5, 10, 20, 50, 100],
@@ -42,7 +42,9 @@ $( ".rol-guardar" ).on( "click", function() {
 			text: 'Something went wrong!',
 			footer: '<a href>Why do I have this issue?</a>'
 		})
-	} else {
+	}
+	else
+	{
 		if($(this).val() == 'nuevo')
 		{
 			$.ajax({

@@ -20,6 +20,16 @@
 		$view_footer = "Views/Template/footer_admin.php";
 		require_once ($view_footer);
 	}
+	function headerFront($data="")
+	{
+		$view_headerFront = "Views/Template/header_front.php";
+		require_once ($view_headerFront);
+	}
+	function footerFront($data="")
+	{
+		$view_footerFront = "Views/Template/footer_front.php";
+		require_once ($view_footerFront);
+	}
 	//MUESTRA INFORMACION FORMATEADA
 	function dep($data)
 	{

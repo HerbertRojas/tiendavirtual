@@ -1,7 +1,5 @@
 <?php 
 	echo headerAdmin($data);
-	echo getModal('modalRoles',$data);
-
 ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">

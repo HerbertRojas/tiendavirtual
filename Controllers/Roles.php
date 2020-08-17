@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	class Roles extends Controllers{
 		public function __construct()
@@ -8,7 +8,7 @@
 
 		public function Roles()
 		{
-			$data['page_id'] = 3;
+			$data['page_id'] = 9;
 			$data['page_tag'] = "Roles Usuario";
 			$data['page_neme'] = "rol usuario";
 			$data['page_title'] = " Roles Usuario<small> Tienda Virtual</small>";

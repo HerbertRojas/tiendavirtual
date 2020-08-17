@@ -8,7 +8,7 @@
 
 		public function nosotros()
 		{
-			$data['page_id'] = 7;
+			$data['page_id'] = 6;
 			$data['page_tag'] = "Productos";
 			$data['page_title'] = "Todo sobre Nosotros";
 			$data['page_name'] = "nosotros";

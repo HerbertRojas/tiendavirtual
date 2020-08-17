@@ -1,4 +1,7 @@
 <!-- Site wrapper -->
+<?php
+	session_start();
+?>
 <div class="wrapper">
 	<!-- Navbar -->
 	<nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -56,7 +59,15 @@
 					<img src="<?php echo media(); ?>/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
 				</div>
 				<div class="info">
-					<a href="#" class="d-block">Walter Rojas</a>
+					<a href="#" class="d-block">
+						<?php 
+							if(isset($_SESSION['user_id'])){ 
+								echo $_SESSION['email_user'];
+							} else { 
+								echo 'Walter Rojas';
+							} 
+						?>
+					</a>
 				</div>
 			</div>
 			<!-- Sidebar Menu -->
