@@ -15,10 +15,10 @@
 		}
 
 		public function verificarUsuar($usuario,$contrasena){
-
+			//si existe echo 1 sino echo 0
 		}
 		public function obtenerRol($usuario){
-			
+
 		}
 	}
 ?>

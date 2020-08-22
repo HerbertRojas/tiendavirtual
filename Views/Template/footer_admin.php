@@ -29,7 +29,15 @@
 <script src="<?php echo media(); ?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?php echo media(); ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
-<script src="<?php echo media(); ?>/js/functions_roles.js"></script>
-<script src="<?php echo media(); ?>/js/functions_productos.js"></script>
 
+<!-- FUNCIONES DE LA VISTA -->
+<?php if ($data['page_neme'] == "roles") { ?>
+<script src="<?php echo media(); ?>/js/functions_roles.js"></script>
+<?php } ?>
+<?php if ($data['page_neme'] == "usuarios") { ?>
+<script src="<?php echo media(); ?>/js/functions_usuarios.js"></script>
+<?php } ?>
+<?php if ($data['page_neme'] == "productos") { ?>
+<script src="<?php echo media(); ?>/js/functions_productos.js"></script>
+<?php } ?>
 </html> 

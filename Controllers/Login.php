@@ -15,20 +15,20 @@
 			$this->views->getView($this,"login",$data);
 		}
 
-		public function iniciarSesion()
-		{
-			$usuario = $_POST['email_user'];
-			$contrasena = $_POST['password'];
+		// public function iniciarSesion()
+		// {
+		// 	$usuario = $_POST['email_user'];
+		// 	$contrasena = $_POST['password'];
 
-			$request = $this->model->verificarUsuario($usuario,$contrasena);
-			$rol = $this->model->obtenerRol($usuario);
-			if($request == 1)
-			{
-				if($rol == 'Cliente')
-				{
-					echo ="1";
-				} else {
-					echo "2";
+		// 	$request = $this->model->verificarUsuario($usuario,$contrasena);
+		// 	$rol = $this->model->obtenerRol($usuario);
+		// 	if($request == 1)
+		// 	{
+		// 		if($rol == 'Cliente')
+		// 		{
+		// 			echo ="1";
+		// 		} else {
+		// 			echo "2";
 					/*
 					succes:function(respuesta) {
 						if(respuesta ==  1){
@@ -38,12 +38,12 @@
 						}
 					}
 					*/
-				}
-			}
-			else {
-				echo 0;
-			}
-		}
+			// 	}
+			// }
+			// else {
+			// 	echo 0;
+			// }
+		//}
 		
 	}
 ?>

@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			{"data":"precio"},			
 			{"data":"stock"}
 		],
+		"resonsive":true,
+		"autoWidth": false,
 		"bDestroy":true,
 		"iDisplayLength":5,
 		"lengthMenu": [5, 10, 20, 50, 100],

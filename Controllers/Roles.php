@@ -8,9 +8,8 @@
 
 		public function Roles()
 		{
-			$data['page_id'] = 9;
 			$data['page_tag'] = "Roles Usuario";
-			$data['page_neme'] = "rol usuario";
+			$data['page_neme'] = "roles";
 			$data['page_title'] = " Roles Usuario<small> Tienda Virtual</small>";
 			$this->views->getView($this,"roles",$data);
 		}

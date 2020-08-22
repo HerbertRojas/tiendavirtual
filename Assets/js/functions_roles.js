@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			{"data":"status"},
 			{"data":"options"}
 		],
-		"resonsive":"true",
+		"resonsive":true,
+		"autoWidth": false,
 		"bDestroy":true,
 		"iDisplayLength":5,
 		"lengthMenu": [5, 10, 20, 50, 100],

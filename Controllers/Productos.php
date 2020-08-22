@@ -8,7 +8,7 @@
 
 		public function Productos()
 		{
-			$data['page_id'] = 8;
+			
 			$data['page_tag'] = "Productos";
 			$data['page_neme'] = "productos";
 			$data['page_title'] = "Productos<small> Tienda Virtual</small>";

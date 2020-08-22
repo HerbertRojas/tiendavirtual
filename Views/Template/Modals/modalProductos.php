@@ -3,7 +3,7 @@
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalScrollableTitle">Nuevo Producto</h5>
+				<h5 class="modal-title" id="exampleModalScrollableTitle">NUEVO PRODUCTO</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -35,15 +35,12 @@
 								<input type="text" class="form-control" id="txtModelo" name="txtModelo" placeholder="Modelo del Producto">
 							</div>
 							<div class="form-group">
-								<label class="txtStock">Stock</label>
-								<input type="text" class="form-control" id="txtStock" name="txtStock" placeholder="Stock del Producto">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
 								<label class="txtColor">Color</label>
 								<input type="text" class="form-control" id="txtColor" name="txtColor" placeholder="Color del Producto">
 							</div>
+						</div>
+						<div class="col-md-6">
+						
 							<div class="form-group">
 								<label class="txtTalla">Talla</label>
 								<input type="text" class="form-control" id="txtTalla" name="txtTalla" placeholder="Talla del Producto">
@@ -64,25 +61,28 @@
 								<label class="txtPrecio">Precio</label>
 								<input type="text" class="form-control" id="txtPrecio" name="txtPrecio" placeholder="Precio del Producto">
 							</div>
-						</div>
-						
-						<div class="form-group col-md-12">
-							<label for="txtImagen">Imagen</label>
-							<div class="custom-file">
-								<input type="file" class="custom-file-input" id="productoImagen">
-								<label class="custom-file-label" for="customFile">Imagen</label>
+							<div class="form-group">
+								<label class="txtStock">Stock</label>
+								<input type="text" class="form-control" id="txtStock" name="txtStock" placeholder="Stock del Producto">
+							</div>
+							<div class="form-group">
+								<label for="txtImagen">Imagen</label>
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="productoImagen">
+									<label class="custom-file-label" for="customFile">Insetar Imagen en .jpg</label>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="title-footer">
+					<!-- title-footer -->
+					<div class="modal-footer justify-content">
 						<button type="button" class="btn btn-success producto-guardar" value="nuevo">
-							<i class="fa fa-fw fa-lg fa-check-circle"></i> Guardar</button>&nbsp;&nbsp;&nbsp;
-						<button type="button" class="btn btn-secondary"  data-dismiss="modal" ><i class="fa fa-fw fa-lg fa-times-circle"></i> Cerrar</button>&nbsp;&nbsp;&nbsp;
+							<i class="fa fa-fw fa-lg fa-check-circle"></i> Guardar</button>
+						<button type="button" class="btn btn-secondary"  data-dismiss="modal" ><i class="fa fa-fw fa-lg fa-times-circle"></i> Cerrar</button>
 						<button type="button" class="btn btn-primary"><i class="fab fa-fw fa-lg fa-gg-circle"></i> Limpiar</button>
 					</div>
 				</div>
 			</form>
-			
 		</div>
 	</div>
 </div>

@@ -1,5 +1,6 @@
-<?php 
+<?php
 	echo headerAdmin($data);
+	getModal('modalUsuarios',$data);
 ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -22,18 +23,22 @@
 					<div class="card">
 						<div class="card-header">
 							<h2 class="card-title"><?php echo $data['page_title'] ?>
-								<!-- <button type="button" class="btn btn-success" onclick="openModal();">
+								<button type="button" class="btn btn-success" onclick="openModal();">
 									<i class="fas fa-plus-circle"></i> Nuevo
-								</button> -->
+								</button>
 							</h2>
 						</div><!-- /.card-header -->
 						<div class="card-body">
-							<table id="tableRoles" class="table table-bordered table-hover">
+							<table id="tableUsuarios" class="table table-bordered table-hover">
 								<thead>
 									<tr>
 										<th>ID</th>
+										<th>DNI</th>
 										<th>Nombre</th>
-										<th>Descripcion</th>
+										<th>Apellido</th>
+										<th>Telefono</th>
+										<th>Email</th>
+										<th>Rol</th>
 										<th>Estado</th>
 										<th>Accion</th>
 									</tr>
@@ -44,8 +49,12 @@
 								<tfoot>
 									<tr>
 										<th>ID</th>
+										<th>DNI</th>
 										<th>Nombre</th>
-										<th>Descripcion</th>
+										<th>Apellido</th>
+										<th>Telefono</th>
+										<th>Email</th>
+										<th>Rol</th>
 										<th>Estado</th>
 										<th>Accion</th>
 									</tr>
