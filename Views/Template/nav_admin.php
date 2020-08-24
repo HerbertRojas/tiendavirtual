@@ -1,7 +1,4 @@
 <!-- Site wrapper -->
-<?php
-	session_start();
-?>
 <div class="wrapper">
 	<!-- Navbar -->
 	<nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -34,11 +31,20 @@
 				<li class="dropdown">
 					<a class="nav-link" href="#" data-toggle="dropdown" aria-label="Open Profile Menu">
 						<i class="fa fa-user fa-lg"></i>
+						<?php
+						if(isset($_SESSION['idusuario'])) {
+							echo $_SESSION['email_user'];
+						}
+						?>
 					</a>
 					<ul class="dropdown-menu settings-menu dropdown-menu-right">
 						<li><a class="dropdown-item" href="<?php echo base_url(); ?>/configuracion"><i class="fa fa-cog fa-lg"></i> Configuracion</a></li>
 						<li><a class="dropdown-item" href="<?php echo base_url(); ?>/perfil"><i class="fa fa-user fa-lg"></i> Perfil</a></li>
-						<li><a class="dropdown-item" href="<?php echo base_url(); ?>/cerrar"><i class="fa fa-sign-out-alt fa-lg"></i> Cerrar</a></li>
+						<li>
+							<a class="dropdown-item" href="#" onclick="cerrarSesion()">
+								<i class="fa fa-sign-out-alt fa-lg"></i> Cerrar
+							</a>
+						</li>
 					</ul>
 				</li>
 			</ul>
@@ -61,8 +67,9 @@
 				<div class="info">
 					<a href="#" class="d-block">
 						<?php 
-							if(isset($_SESSION['user_id'])){ 
-								echo $_SESSION['email_user'];
+							if(isset($_SESSION['idusuario'])){ 
+								echo $_SESSION['nombres']."<br>";
+								echo "<b>".$_SESSION['rol_name']."</b>";
 							} else { 
 								echo 'Walter Rojas';
 							} 
@@ -147,7 +154,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="<?php echo base_url(); ?>/logout" class="nav-link">
+						<a href="#" class="nav-link" onclick="cerrarSesion()">
 							<i class="nav-icon fas fa-sign-out-alt"></i>
 							<p>Logout</p>
 						</a>

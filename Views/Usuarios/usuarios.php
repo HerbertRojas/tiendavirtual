@@ -1,6 +1,11 @@
 <?php
-	echo headerAdmin($data);
-	getModal('modalUsuarios',$data);
+	session_start();	
+	if($_SESSION['idusuario'] == null || $_SESSION['idusuario']=='')
+	{
+		echo "<script>window.location.href= 'login'</script>";
+	} else {
+		echo headerAdmin($data);
+		getModal('modalUsuarios',$data);
 ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -67,4 +72,7 @@
 		</div><!-- /.card -->
 	</section><!-- /.content -->
 </div><!-- /.content-wrapper -->
-<?php echo footerAdmin($data); ?>
+<?php 
+	echo footerAdmin($data); 
+	}
+?>

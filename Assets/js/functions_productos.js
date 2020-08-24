@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 
-
-
 $("#tableProductos").DataTable();
 
 function openModal(){
@@ -135,7 +133,11 @@ $( ".producto-guardar" ).on( "click", function() {
 	}
 	else if(txtStock=='' || txtStock==null )
 	{
-		Swal.fire({icon: 'error', title: 'Validación', text: 'Debe Ingresar el Stock',})
+		Swal.fire({
+			icon: 'error',
+			title: 'Validación',
+			text: 'Debe Ingresar el Stock',
+		})
 	} 
 	else
 	{

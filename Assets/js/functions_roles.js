@@ -1,4 +1,3 @@
-
 var tableRoles;
 
 document.addEventListener('DOMContentLoaded', function(){

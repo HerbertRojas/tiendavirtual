@@ -16,7 +16,7 @@
 
 		public function getUsuario()
 		{
-			$arrData = $this->model->selectUsuario($_GET['idRol']);
+			$arrData = $this->model->selectUsuario($_GET['idUsuario']);
 			echo json_encode($arrData);
 		}
 		
@@ -33,15 +33,26 @@
 					$arrData[$i]['status'] = '<span class="badge bg-danger">Inactivo</span>';
 				}
 
-				// $arrData[$i]['options'] = '<div class="text-center">
-				// <button class="btn btn-secondary btn-sm btnPermisosRol" rl="'.$arrData[$i]['idrol'].'" title="Permisos"><i class="fas fa-key"></i></button>
-				// <button type="button" class="btn btn-primary btn-sm btnEditRol" rl="'.$arrData[$i]['idrol'].'" title="Editar" onclick="editarRole('.$arrData[$i]['idrol'].')"><i class="fas fa-pencil-alt"></i></button>
-				// <button type="button" class="btn btn-danger btn-sm btnDelRol" onclick="eliminarRol('.$arrData[$i]['idrol'].')" rl="'.$arrData[$i]['idrol'].'" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
-				// </div>'; 
+				$arrData[$i]['options'] = 
+				'<div class="text-center">	
+					<button type="button" class="btn btn-primary btn-sm btnEditRol" rl="'.$arrData[$i]['idusuario'].'" title="Editar" onclick="editarRole('.$arrData[$i]['idusuario'].')">
+						<i class="fas fa-pencil-alt"></i>
+					</button>
+					<button type="button" class="btn btn-danger btn-sm btnDelRol" onclick="eliminarRol('.$arrData[$i]['idusuario'].')" rl="'.$arrData[$i]['idusuario'].'" title="Eliminar">
+						<i class="fas fa-trash-alt"></i>
+					</button>
+				</div>'; 
 			}
 			
 			echo json_encode($arrData,JSON_UNESCAPED_UNICODE);
 			die();
 		}
+
+		public function insertarUsuario() 
+		{
+			$idusuario = $this->model->insertarUsuario($_POST);
+			echo $idusuario;
+		}
+
 	}
  ?>

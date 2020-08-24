@@ -18,16 +18,14 @@
 							<form>
 								<h2 class="text-center">INICIO DE SESIÓN</h2>
 								<div class="input-group mb-3">
-									<input type="text" class="form-control" placeholder="Correo Electronico"	>
+									<input type="text" class="form-control" placeholder="Correo Electronico" id="email"	>
 								</div>
 								<div class="input-group mb-3">
-									<input type="password" class="form-control" placeholder="contraseña">
+									<input type="password" class="form-control" placeholder="contraseña" id="password">
 								</div>
 								<div class="input-group mb-3">
 									<button type="button" class="btn btn-dark btn-lg btn-block boton-login">INICIAR SESION</button>
 								</div>
-							</form>
-							<form>
 								<h1 class="text-center">¿PRIMERA VEZ AQUÍ?</h1>
 								<div class="input-group mb-3">
 									<button type="button" class="btn btn-primary btn-lg btn-block">REGÍSTRATE AHORA</button>

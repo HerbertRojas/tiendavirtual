@@ -19,12 +19,12 @@
 								<input type="text" class="form-control" id="txtDNI" name="txtDNI" placeholder="Ingresar DNI">
 							</div>
 							<div class="form-group">
-								<label for="txtNombre">Nombre</label>
-								<input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Ingresar tu Nombre">
+								<label for="txtNombres">Nombre</label>
+								<input type="text" class="form-control" id="txtNombres" name="txtNombres" placeholder="Ingresar tu Nombres">
 							</div>
 							<div class="form-group">
-								<label for="txtApellido">Apellido</label>
-								<input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Ingresar tu Apellido">
+								<label for="txtApellidos">Apellido</label>
+								<input type="text" class="form-control" id="txtApellidos" name="txtApellidos" placeholder="Ingresar tu Apellidos">
 							</div>
 							<div class="form-group">
 								<label for="txtTelefono">Telefono</label>
@@ -41,8 +41,10 @@
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<label for="listTipoUsuario">Tipo Usuario</label>
-								<select class="form-control" id="listTipoUsuario" name="listTipoUsuario" ></select>
+								<label for="listRolid">Tipo Usuario</label>
+								<select class="form-control select2 select2-primary" data-dropdown-css-class="select2-primary" style="width: 100%;" id="listRolid" name="listRolid" >
+									
+								</select>
 							</div>
 							<div class="form-group">
 								<label for="listEstado">Estado</label>
@@ -53,7 +55,7 @@
 							</div>
 							<div class="form-group">
 								<label for="txtContraseña">Contraseña</label>
-								<input type="password" class="form-control" id="txtContraseña" name="txtContraseña" placeholder="Ingresa una contraseña">
+								<input type="password" class="form-control" id="txtContrasena" name="txtContrasena" placeholder="Ingresa una contraseña">
 							</div>
 							<!-- <div class="form-group">
 								<label for="txtPrecio">Precio</label>
@@ -74,8 +76,8 @@
 					</div>
 					<!-- title-footer -->
 					<div class="modal-footer justify-content">
-						<button id="btnActionFrom" type="button" class="btn btn-success producto-guardar" value="nuevo">
-							<i class="fa fa-fw fa-lg fa-check-circle"></i><span id="btnText"></span> Guardar
+						<button id="btnActionFrom" type="button" class="btn btn-success usuario-guardar" value="nuevo">
+							<i class="fa fa-fw fa-lg fa-check-circle"></i> Guardar
 						</button>
 						<button type="button" class="btn btn-secondary"  data-dismiss="modal" >
 							<i class="fa fa-fw fa-lg fa-times-circle"></i> Cerrar

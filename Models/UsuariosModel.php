@@ -13,12 +13,27 @@
 			$request = $this->select($sql);
 			return $request;
 		}
+
 		public function selectUsuarios()
 		{
 			//EXTRAER USUARIOS
-			$sql = "SELECT * FROM usuario WHERE status != 0";
+			$sql = "SELECT usuario.*,nombrerol	
+					FROM usuario INNER JOIN rol on usuario.rolid = rol.idrol 
+					WHERE usuario.status <> 0";
 			$request = $this->select_all($sql);
 			return $request;
+		}
+
+		public function insertarUsuario($usuario)
+		{
+			$sql = "SELECT idrol FROM rol WHERE nombrerol='".$usuario['listRol']."'";
+			$rol = $request = $this->select($sql);
+
+			$sql = "INSERT INTO usuario(dni,nombres,apellidos,telefono,email,password,rolid,status) VALUE(?,?,?,?,?,?,?,?)";
+			$usuarioValues = [$usuario['txtDNI'], $usuario['txtNombres'],$usuario['txtApellidos'],
+							$usuario['txtTelefono'], $usuario['txtEmail'],$usuario['txtContrasena'],
+							$rol['idrol'], $usuario['listEstado']];
+			return  $this->insert($sql,$usuarioValues);
 		}
 
 		// public function insertarRole($nombrerol,$descripcion,$status)

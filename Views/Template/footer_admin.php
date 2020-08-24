@@ -19,6 +19,9 @@
 <script src="<?php echo media(); ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- SweetAlert2 -->
 <script src="<?php echo media(); ?>/plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Select2 -->
+<script src="<?php echo media(); ?>/plugins/select2/js/select2.full.min.js"></script>
+<!-- <script src="<?php //echo media(); ?>/js/bootstrap-select.min.js"></script> -->
 <!-- AdminLTE App -->
 <script src="<?php echo media(); ?>/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
@@ -29,8 +32,13 @@
 <script src="<?php echo media(); ?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?php echo media(); ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
-
 <!-- FUNCIONES DE LA VISTA -->
+<?php
+	if(isset($data['page_neme'])){
+?>
+<?php if ($data['page_neme'] == "login") { ?>
+<script src="<?php echo media(); ?>/js/functions_login.js"></script>
+<?php } ?>
 <?php if ($data['page_neme'] == "roles") { ?>
 <script src="<?php echo media(); ?>/js/functions_roles.js"></script>
 <?php } ?>
@@ -40,4 +48,6 @@
 <?php if ($data['page_neme'] == "productos") { ?>
 <script src="<?php echo media(); ?>/js/functions_productos.js"></script>
 <?php } ?>
-</html> 
+<?php } ?>
+<script src="<?php echo media(); ?>/js/functions_login.js"></script>
+</html>

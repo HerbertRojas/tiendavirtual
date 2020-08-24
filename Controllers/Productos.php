@@ -48,11 +48,9 @@
 			die();
 		}
 
-		public function insertarProducto()
+		public function insertarProducto() 
 		{
 			$idproducto = $this->model->insertarProducto($_POST);
-
-			//$imagen = $_POST['imagenProducto'];
 
 			if (($_FILES["imagenProducto"]["type"] == "image/pjpeg")
 			    || ($_FILES["imagenProducto"]["type"] == "image/jpeg")

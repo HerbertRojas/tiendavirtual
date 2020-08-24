@@ -21,6 +21,8 @@
 	<!-- google fonst -->
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- SweetAlert2 -->
+	<link rel="stylesheet" href="<?php echo media(); ?>/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
 </head>
 <body style="font-family: 'Roboto';">
 	<a href="https://api.whatsapp.com/send?phone=51999385708&text=Hola%20Quisiera%20mas%20informacion" class="float" target="_blank">
@@ -59,13 +61,32 @@
 			<ul class="navbar-nav">
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#" >
-						<i class="fa fa-user mr-8"></i> Mi Cuenta<i class="fa fa-angle-down ml-8"></i>
+						<i class="fa fa-user mr-8"></i> 
+						<?php 
+							if(isset($_SESSION['idusuario']))
+							{
+								echo $_SESSION['email_user'];
+							}
+							else{
+								echo "Mi Cuenta";	
+							}
+						?> 
+						<i class="fa fa-angle-down ml-8"></i>
 					</a>
 					<div class="dropdown-menu">
-						<a href="login.php" class="dropdown-item">Login</a>
+					<?php
+						if(!isset($_SESSION['idusuario']))
+						{
+					?>
+						<a href="login" class="dropdown-item">Login</a>
 						<a href="#" class="dropdown-item">Crear Cuenta</a>
 						<a href="#" class="dropdown-item">¿Olvidaste tu CLave?</a>
 						<a href="#" class="dropdown-item">Contactenos</a>
+					<?php } else { ?>
+						<a href="#" class="dropdown-item" onclick="cerrarSesion()">Cerrar Sesi&oacute;n</a>
+					<?php
+						}
+					?>
 						<div class="dropdown-divider"></div>
 						<a href="#" class="dropdown-item">Mi Carrito</a>
 					</div>
