@@ -1,4 +1,4 @@
-<?php 
+<?php
 	class LoginModel extends Mysql
 	{	
 		/*
@@ -15,7 +15,7 @@
 
 		public function verificarUsuario($usuario,$contrasena){
 			//si existe echo 1 sino echo 0
-			//EXTRAER ROLES
+			
 			$sql = "SELECT usuario.*,nombrerol
 					FROM usuario INNER JOIN rol on usuario.rolid = rol.idrol
 					WHERE email = '".$usuario."' and password = '".$contrasena."'";

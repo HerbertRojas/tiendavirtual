@@ -34,10 +34,6 @@
 								<label for="txtEmail">Email</label>
 								<input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Ingresar Email">
 							</div>
-							<!-- <div class="form-group">
-								<label for="txtColor">Color</label>
-								<input type="text" class="form-control" id="txtColor" name="txtColor" placeholder="Color del Producto">
-							</div> -->
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
@@ -57,14 +53,6 @@
 								<label for="txtContraseña">Contraseña</label>
 								<input type="password" class="form-control" id="txtContrasena" name="txtContrasena" placeholder="Ingresa una contraseña">
 							</div>
-							<!-- <div class="form-group">
-								<label for="txtPrecio">Precio</label>
-								<input type="text" class="form-control" id="txtPrecio" name="txtPrecio" placeholder="Precio del Producto">
-							</div>
-							<div class="form-group">
-								<label for="txtStock">Stock</label>
-								<input type="text" class="form-control" id="txtStock" name="txtStock" placeholder="Stock del Producto">
-							</div> -->
 							<div class="form-group">
 								<label for="productoImagen">Imagen</label>
 								<div class="custom-file">

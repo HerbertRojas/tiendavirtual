@@ -21,7 +21,6 @@
 <script src="<?php echo media(); ?>/plugins/sweetalert2/sweetalert2.min.js"></script>
 <!-- Select2 -->
 <script src="<?php echo media(); ?>/plugins/select2/js/select2.full.min.js"></script>
-<!-- <script src="<?php //echo media(); ?>/js/bootstrap-select.min.js"></script> -->
 <!-- AdminLTE App -->
 <script src="<?php echo media(); ?>/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->

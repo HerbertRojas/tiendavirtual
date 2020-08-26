@@ -145,7 +145,7 @@ $( ".usuario-guardar" ).on( "click", function() {
 					//console.log(respuesta)
 					if(respuesta>=1)
 					{
-						$('#modalFormUsuario').modal('hide');
+						//$('#modalFormUsuario').modal('hide');
 						Swal.fire({
 							icon:'success',
 							title:'Usuarios',
@@ -188,4 +188,4 @@ $( ".usuario-guardar" ).on( "click", function() {
 		// }
 		
 	}
-}); 
+});

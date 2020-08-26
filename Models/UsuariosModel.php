@@ -36,13 +36,6 @@
 			return  $this->insert($sql,$usuarioValues);
 		}
 
-		// public function insertarRole($nombrerol,$descripcion,$status)
-		// {
-		// 	$sql = "INSERT INTO rol(nombrerol,descripcion,status) VALUE(?,?,?)";
-		// 	$roleValues = [$nombrerol,$descripcion,$status];
-		// 	return  $this->insert($sql,$roleValues);
-		// }
-
 		// public function actualizarRole($nombrerol,$descripcion,$status,$idrol)
 		// {
 		// 	$sql = "UPDATE rol SET nombrerol=?,descripcion=?,status=? WHERE idrol=?";

@@ -70,9 +70,10 @@
 							if(isset($_SESSION['idusuario'])){ 
 								echo $_SESSION['nombres']."<br>";
 								echo "<b>".$_SESSION['rol_name']."</b>";
-							} else { 
-								echo 'Walter Rojas';
 							} 
+							// else { 
+							// 	echo 'Walter Rojas';
+							// } 
 						?>
 					</a>
 				</div>

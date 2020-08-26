@@ -34,6 +34,13 @@
 		</a>
 	</div>
 	<hr>
+	<!-- <div class="text-center">
+		<video width="500" class="video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="my-video" >
+			<source src="<?php //echo media(); ?>/video/video2.mp4" type="video/mp4" />
+		</video>
+	</div> -->
+	
+	<hr>
 	<div class="text-center" style="font-family: 'Oswald';">
 		<h1>PRODUCTOS DESTACADOS 2020</h1>
 	</div>

@@ -18,7 +18,7 @@
 							<form>
 								<h2 class="text-center">INICIO DE SESIÓN</h2>
 								<div class="input-group mb-3">
-									<input type="text" class="form-control" placeholder="Correo Electronico" id="email"	>
+									<input type="text" class="form-control" placeholder="Correo Electronico" id="email">
 								</div>
 								<div class="input-group mb-3">
 									<input type="password" class="form-control" placeholder="contraseña" id="password">
@@ -28,7 +28,7 @@
 								</div>
 								<h1 class="text-center">¿PRIMERA VEZ AQUÍ?</h1>
 								<div class="input-group mb-3">
-									<button type="button" class="btn btn-primary btn-lg btn-block">REGÍSTRATE AHORA</button>
+									<button type="button" class="btn btn-primary btn-lg btn-block" onclick="registrar()">REGÍSTRATE AHORA</button>
 								</div>
 							</form>
 						</div>
