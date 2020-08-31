@@ -61,53 +61,147 @@
 			<div class="card" style="width: 18rem;">
 				<img src="<?php echo media(); ?>/images/productos/ro2ma.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
 				</div>
 			</div>
 		</li>
 		<li class="item-a">
 			<div class="card" style="width: 18rem;">
-		<img src="<?php echo media(); ?>/images/productos/ro3ma.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-		<h5 class="card-title">Card title</h5>
-		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		<a href="#" class="btn btn-primary">Go somewhere</a>
-		</div>
-		</div>
+				<img src="<?php echo media(); ?>/images/productos/ro3ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
 		</li>
 		<li class="item-a">
 			<div class="card" style="width: 18rem;">
-		<img src="<?php echo media(); ?>/images/productos/ro4za.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-		<h5 class="card-title">Card title</h5>
-		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		<a href="#" class="btn btn-primary">Go somewhere</a>
-		</div>
-		</div>
+				<img src="<?php echo media(); ?>/images/productos/ro4za.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
 		</li>
 		<li class="item-a">
 			<div class="card" style="width: 18rem;">
-		<img src="<?php echo media(); ?>/images/productos/ro5za.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-		<h5 class="card-title">Card title</h5>
-		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		<a href="#" class="btn btn-primary">Go somewhere</a>
-		</div>
-		</div>
+				<img src="<?php echo media(); ?>/images/productos/ro5za.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
 		</li>
 		<li class="item-a">
 			<div class="card" style="width: 18rem;">
-		<img src="<?php echo media(); ?>/images/productos/ro6ma.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-		<h5 class="card-title">Card title</h5>
-		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		<a href="#" class="btn btn-primary">Go somewhere</a>
-		</div>
-		</div>
+				<img src="<?php echo media(); ?>/images/productos/ro6ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
 		</li>
 	</ul>
+	<div class="container" style="width: 100%;">
+		<div class="row">
+			<div class="card col-lg-3 col-md-6 col-12" style="width: 18rem;">
+				<img src="<?php echo media(); ?>/images/productos/ro1ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="verproducto" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
+			<div class="card col-lg-3 col-md-6 col-12" style="width: 18rem;">
+				<img src="<?php echo media(); ?>/images/productos/ro1ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
+			<div class="card col-lg-3 col-md-6 col-12" style="width: 18rem;">
+				<img src="<?php echo media(); ?>/images/productos/ro1ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
+			<div class="card col-lg-3 col-md-6 col-12" style="width: 18rem;">
+				<img src="<?php echo media(); ?>/images/productos/ro1ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
+			<div class="card col-lg-3 col-md-6 col-12" style="width: 18rem;">
+				<img src="<?php echo media(); ?>/images/productos/ro1ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
+			<div class="card col-lg-3 col-md-6 col-12" style="width: 18rem;">
+				<img src="<?php echo media(); ?>/images/productos/ro1ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
+			<div class="card col-lg-3 col-md-6 col-12" style="width: 18rem;">
+				<img src="<?php echo media(); ?>/images/productos/ro1ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
+			<div class="card col-lg-3 col-md-6 col-12" style="width: 18rem;">
+				<img src="<?php echo media(); ?>/images/productos/ro1ma.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-text">Mascaria</h5>
+					<h5 class="card-text">Marca: Gzuck</h5>
+					<h5 class="card-text">Modelo: Troop</h5>
+					<h5 class="card-text">Precio: S/ 39.00</h5>
+					<a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Ver</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="text-center">
 		<div class="container">
@@ -139,4 +233,5 @@
 			</div>	
 		</div>
 	</div>
+
 <?php echo footerFront($data); ?>

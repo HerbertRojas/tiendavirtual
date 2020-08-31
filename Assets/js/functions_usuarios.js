@@ -120,8 +120,7 @@ $( ".usuario-guardar" ).on( "click", function() {
 			title: 'Validación',
 			text: 'Debe Ingresar tus Contraseña',
 		})
-	} 
-	else{
+	} else {
 		if($(this).val() == 'nuevo')
 		{
 			var fromData = new FormData();
@@ -158,34 +157,60 @@ $( ".usuario-guardar" ).on( "click", function() {
 					}
 				}
 			})
-		} 
-		// else {
-		// 	$.ajax({
-		// 		url:base_url+'/Roles/actualizarRol',
-		// 		type:'POST',
-		// 		data:{
-		// 			strNombre:strNombre,
-		// 			strDescripcion:strDescripcion,
-		// 			listStatus:listStatus,
-		// 			idRol:idRol
-		// 		},
-		// 		success:function(respuesta) {
-		// 			if(respuesta==1)
-		// 			{
-		// 				$('#modalFormRol').modal('hide');
-		// 				Swal.fire({
-		// 					icon:'success',
-		// 					title:'Roles',
-		// 					text:'Rol Actualizado Exitósamente'
-		// 				}).then((response) => {
-		// 					if(response.value){							
-		// 						window.location.href='roles'
-		// 					}
-		// 				})						
-		// 			}
-		// 		}
-		// 	})
-		// }
+		} else {
+			$.ajax({
+				url:base_url+'/Usuarios/actualizarUsuario',
+				type:'POST',
+				data:fromData,
+				processData: false,
+    			contentType: false,
+				success:function(respuesta) {
+					if(respuesta==1)
+					{
+						$('#modalFormUsuario').modal('hide');
+						Swal.fire({
+							icon:'success',
+							title:'Usuario',
+							text:'Usuario Actualizado Exitósamente'
+						}).then((response) => {
+							if(response.value){
+								window.location.href='usuarios'
+							}
+						})
+					}
+				}
+			})
+		}
 		
 	}
 });
+
+function editarUsuario(idUsuario) {
+	//OBTENER DATOS DEL IDUSUARIO SELECCIONADO
+	$.ajax({
+		url:base_url+'/Usuarios/getUsuario',
+		type:'GET',
+		data:{
+			idUsuario:idUsuario
+		},
+		success:function(respuesta) {
+			let usuario =  JSON.parse(respuesta)
+			if(usuario)
+			{
+				$('#modalFormUsuario').modal('show');
+				$('.modal-title').html('Editar Usuario')
+				$('.usuario-guardar').val('editar');
+				$('#idUsuario').val(usuario.idusuario)
+				$('#txtDNI').val(usuario.dni)
+				$('#txtNombres').val(usuario.nombres)
+				$('#txtApellidos').val(usuario.apellidos)
+				$('#txtTelefono').val(usuario.telefono)
+				$('#txtEmail').val(usuario.email)
+				$('#txtContrasena').val(usuario.password)
+				$('#listRolid').val(usuario.rolid)
+				$('#listStatus').val(usuario.status)				
+			}
+			
+		}
+	})	
+}

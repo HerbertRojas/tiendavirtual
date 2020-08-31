@@ -21,12 +21,21 @@
 
 			for($i=0;$i <count($arrData);$i++)
 			{
-				if($arrData[$i]['imagen'] == null || $arrData[$i]['imagen'] == ''){
+				if($arrData[$i]['imagen'] == null || $arrData[$i]['imagen'] == '')
+				{
 					$arrData[$i]['imagen'] = '';
 				}
-				else {
+				else
+				{
 					$arrData[$i]['imagen'] = "<img src='".media()."/images/".$arrData[$i]['imagen']."' height='32'>";
 				}
+				$arrData[$i]['options'] = '
+				<div class="text-center">
+					<button type="button" class="btn btn-primary btn-sm btnEditProducto" rl="'.$arrData[$i]['idproducto'].'" title="Editar" onclick="editarProductos('.$arrData[$i]['idproducto'].')"><i class="fas fa-pencil-alt"></i>
+					</button>
+					<button type="button" class="btn btn-danger btn-sm btnDelProducto" onclick="eliminarProducto('.$arrData[$i]['idproducto'].')" rl="'.$arrData[$i]['idproducto'].'" title="Eliminar"><i class="fas fa-trash-alt"></i>
+					</button>
+				</div>';
 			}
 			// for ($i=0; $i < count($arrData); $i++){
 
@@ -36,13 +45,6 @@
 			// 	}else{
 			// 		$arrData[$i]['status'] = '<span class="badge bg-danger">Inactivo</span>';
 			// 	}
-
-			// 	$arrData[$i]['options'] = '<div class="text-center">
-			// 	<button class="btn btn-secondary btn-sm btnPermisosRol" rl="'.$arrData[$i]['idrol'].'" title="Permisos"><i class="fas fa-key"></i></button>
-			// 	<button type="button" class="btn btn-primary btn-sm btnEditRol" rl="'.$arrData[$i]['idrol'].'" title="Editar" onclick="editarRole('.$arrData[$i]['idrol'].')"><i class="fas fa-pencil-alt"></i></button>
-			// 	<button type="button" class="btn btn-danger btn-sm btnDelRol" onclick="eliminarRol('.$arrData[$i]['idrol'].')" rl="'.$arrData[$i]['idrol'].'" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
-			// 	</div>'; 
-			// }
 			
 			echo json_encode($arrData,JSON_UNESCAPED_UNICODE);
 			die();

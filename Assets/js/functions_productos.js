@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			{"data":"genero"},
 			{"data":"botapie"},
 			{"data":"precio"},			
-			{"data":"stock"}
+			{"data":"stock"},
+			{"data":"options"}
 		],
 		"resonsive":true,
 		"autoWidth": false,

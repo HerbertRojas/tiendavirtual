@@ -9,7 +9,7 @@
 
 		public function selectUsuario($idUsuario)
 		{
-			$sql= "SELECT * FROM usuario WHERE idusurio = '".$idUsuario."'";
+			$sql= "SELECT * FROM usuario WHERE idusuario = '".$idUsuario."'";
 			$request = $this->select($sql);
 			return $request;
 		}
@@ -36,12 +36,24 @@
 			return  $this->insert($sql,$usuarioValues);
 		}
 
-		// public function actualizarRole($nombrerol,$descripcion,$status,$idrol)
-		// {
-		// 	$sql = "UPDATE rol SET nombrerol=?,descripcion=?,status=? WHERE idrol=?";
+		public function actualizarUsuario($dni,$nombres,$apellidos,$telefono,$email,$password,$rolid,$status,$idusuario)
+		{
+			$sql = "UPDATE usuario SET dni=?,nombres=?,apellidos=?,telefono=?,email=?,password=?,rolid=?,status=? WHERE idusuario=?";
 
-		// 	$roleValues = [$nombrerol,$descripcion,$status,$idrol];
-		// 	return  $this->update($sql,$roleValues);
+			$usuarioValues = [$dni,$nombres,$apellidos,$telefono,$email,$password,$rolid,$status,$idusuario];
+			return  $this->update($sql,$usuarioValues);
+		}
+
+			
+
+
+
+		// public function actualizarUsuario($dni,$nombres,$apellidos,$telefono,$email,$password,$rolid,$status,$idusuario)
+		// {
+		// 	$sql = "UPDATE usuario SET dni=?,nombres=?,apellidos=?,telefono=?,email=?,password=?,rolid=?,status=? WHERE idusuario=?";
+
+		// 	$usuarioValues = [$dni,$nombres,$apellidos,$telefono,$email,$password,$rolid,$status,$idusuario];
+		// 	return  $this->update($sql,$usuarioValues);
 		// }
 
 		// public function eliminarRole($idrol)

@@ -50,16 +50,16 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<label for="txtContraseña">Contraseña</label>
+								<label for="txtContrasena">Contraseña</label>
 								<input type="password" class="form-control" id="txtContrasena" name="txtContrasena" placeholder="Ingresa una contraseña">
 							</div>
-							<div class="form-group">
+							<!-- <div class="form-group">
 								<label for="productoImagen">Imagen</label>
 								<div class="custom-file">
 									<input type="file" class="custom-file-input" id="productoImagen">
 									<label class="custom-file-label" for="customFile">Insetar Imagen en .jpg</label>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<!-- title-footer -->

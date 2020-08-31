@@ -53,6 +53,7 @@
 													<th>Botapie</th>
 													<th>Precio</th>										
 													<th>Stock</th>
+													<th>Accion</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -70,8 +71,9 @@
 													<th>Talla</th>
 													<th>Genero</th>
 													<th>Botapie</th>
-													<th>Precio</th>										
+													<th>Precio</th>									
 													<th>Stock</th>
+													<th>Accion</th>
 												</tr>
 											</tfoot>
 										</table>

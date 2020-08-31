@@ -35,7 +35,7 @@
 
 				$arrData[$i]['options'] = 
 				'<div class="text-center">	
-					<button type="button" class="btn btn-primary btn-sm btnEditRol" rl="'.$arrData[$i]['idusuario'].'" title="Editar" onclick="editarRole('.$arrData[$i]['idusuario'].')">
+					<button type="button" class="btn btn-primary btn-sm btnEditUsuario" rl="'.$arrData[$i]['idusuario'].'" title="Editar" onclick="editarUsuario('.$arrData[$i]['idusuario'].')">
 						<i class="fas fa-pencil-alt"></i>
 					</button>
 					<button type="button" class="btn btn-danger btn-sm btnDelRol" onclick="eliminarRol('.$arrData[$i]['idusuario'].')" rl="'.$arrData[$i]['idusuario'].'" title="Eliminar">
@@ -51,6 +51,12 @@
 		public function insertarUsuario() 
 		{
 			$idusuario = $this->model->insertarUsuario($_POST);
+			echo $idusuario;
+		}
+
+		public function actualizarUsuario() 
+		{
+			$idusuario = $this->model->actualizarUsuario($_POST);
 			echo $idusuario;
 		}
 

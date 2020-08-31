@@ -54,7 +54,6 @@
 				}
 			}
 			echo $htmlOptions;
-			//die();
 		}
 
 		public function insertarRol() 
